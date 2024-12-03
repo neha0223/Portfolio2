@@ -1,17 +1,232 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
     margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    font-size: 20px;
+    width: 210px;
+    background-color: #e0dbc8;
+    color: #cacaca;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Fixed */
+    z-index: 10; /* Ensure it's above other elements */
+    position: relative;
+}
+
+.sidebar h2 {
+    color: #1b1b1b;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+.sidebar ul {
+    list-style: none;
     padding: 0;
-    text-align: center;
+    width: 100%;
 }
 
-h1 {
-    color: #333;
+.sidebar ul li {
+    margin: 15px 0;
+    text-align: left;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+.sidebar ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #1b1b1b;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #cacaca;
+}
+
+/* Main Content */
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #1b1b1b;
+    overflow-y: auto;
+}
+
+.content section {
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.content h1, .content h2 {
+    margin-top: 30px;
+    margin-left: 20px;
+    color: #cacaca;
+}
+
+.content p {
+    margin-top: 30px;
+    margin-left: 20px;
+    color: #cacaca;
+}
+
+/* Image Gallery for Mystery */
+.image-gallery {
+    display: flex;
+    gap: 20px; /* Space between images */
+    margin-top: 20px;
+    justify-content: center; /* Center the images horizontally */
+}
+
+.gallery-image {
+    max-width: 100%; /* Ensures the image does not exceed the container width */
+    height: auto; /* Automatically adjusts height to maintain aspect ratio */
+    border: 2px solid #cacaca;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.gallery-image {
+    width: 400px;
+    /* height: 400px; */
+    object-fit: cover;
+}
+
+/* Image Gallery for Dorm*/
+.image-gallery2 {
+    display: flex;
+    gap: 20px; /* Space between images */
+    margin-top: 20px;
+    justify-content: center; /* Center the images horizontally */
+}
+
+.gallery-image2 {
+    max-width: 100%; /* Ensures the image does not exceed the container width */
+    height: auto; /* Automatically adjusts height to maintain aspect ratio */
+    border: 2px solid #cacaca;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery-image2:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.gallery-image2 {
+    width: 600px;
+    /* height: 400px; */
+    object-fit: cover;
+}
+
+.iframe-container {
+    margin-top: 20px;
+    text-align: center; /* Center the iframe */
+}
+
+iframe {
+    border: none;
+    max-width: 100%; /* Ensures responsiveness */
+    height: auto;
+}
+
+/* Image Gallery for Spotify*/
+.image-gallery3 {
+    display: flex;
+    gap: 20px; /* Space between images */
+    margin-top: 20px;
+    justify-content: center; /* Center the images horizontally */
+}
+
+.gallery-image3 {
+    max-width: 100%; /* Ensures the image does not exceed the container width */
+    height: auto; /* Automatically adjusts height to maintain aspect ratio */
+    border: 2px solid #cacaca;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery-image3:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.gallery-image3 {
+    width: 800px;
+    height: 425px;
+    object-fit: cover;
+}
+
+.iframe-container2 {
+    margin: 20px auto;
+    text-align: center; /* Center the iframe horizontally */
+    max-width: 1200px; /* Restrict maximum width */
+    width: 100%; /* Make it responsive */
+}
+
+iframe {
+    width: 100%; /* Full width of the container */
+    height: 800px; /* Larger height for better visibility */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+/* Video Container */
+.video-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    background-color: #000; /* Background color */
+    padding: 10px;
+    text-align: center; /* Center the video horizontally */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.video-container iframe {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+/* Image Gallery for nost*/
+.image-gallery4 {
+    display: flex;
+    gap: 20px; /* Space between images */
+    margin-top: 20px;
+    justify-content: center; /* Center the images horizontally */
+}
+
+.gallery-image4 {
+    max-width: 100%; /* Ensures the image does not exceed the container width */
+    height: auto; /* Automatically adjusts height to maintain aspect ratio */
+    border: 2px solid #cacaca;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery-image4:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.gallery-image4 {
+    width: 1220px;
+    height: 425px;
+    object-fit: cover;
 }
