@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item 
+          id="coffeetable" 
+          src="https://cdn.glitch.global/1319552a-c300-4bbc-9341-a5fcb884e793/couch.glb?v=1740542209936">
+        </a-asset-item>
+      </a-assets>
+      
+      <a-entity 
+        gltf-model="#coffeetable" 
+        position="21 -6 -9" 
+        scale="0.5 0.5 0.5" 
+        rotation="0 90 0"
+        modify-materials>
+      </a-entity>
+      <a-entity light="color: #e3e2bf; intensity: 7" position="0 5 10"></a-entity>
+      
+      <a-sky color="#1b1b1b"></a-sky>
+
+    </a-scene>
+  </body>
+
+</html>
