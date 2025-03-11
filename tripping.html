@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nostalgia tripping !</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2><a href="index.html">neha s.</a></h2>
+            <ul>
+                <h5>games...</h5>
+                <li><a href="mystery.html">mystery falls: <br> game boy advance</a></li>
+                <li><a href="dorm.html">dorm simulator:<br> first-person adventure</a></li>
+                <li><a href="tripping.html">3d prototype:<br> nostalgia tripping</a></li>
+        
+                <h5><br></h5>
+                <h5>interaction design...</h5>
+                <li><a href="spotify.html">spotify wrapped: <br> an android app</a></li>
+                
+        
+                <h5><br></h5>
+                <h5>transmedia design...</h5>
+                <li><a href="VIP.html">VIP: <br>Electronic ARTrium</a></li>
+        
+                <h5><br></h5>
+                <h5>product design...</h5>
+                <li><a href="nostalgia.html">nostalgia: <br> a soda brand</a></li>
+        
+                <h5><br></h5>
+                <h5>video production...</h5>
+                <li><a href="penelope.html">penelope road: <br> a documentary</a></li>
+                <li><a href="film.html">experimental films</a></li>
+            </ul>            
+        </nav>
+        <main class="content">
+            <section>
+                <h1>nostalgia tripping: a Unity 3D prototype 🚧 </h1>
+                <p>Here are some initial images of Blender models and textures I've created.</p>
+
+                <p>Images</p>
+    
+                <!-- Fullscreen Image Modal -->
+                <div class="fullscreen-overlay" id="fullscreenOverlay">
+                    <button class="close-btn" onclick="closeFullscreen()">×</button>
+                    <img id="fullscreenImg" src="">
+                </div>
+                
+                <!-- Images Section -->
+                <div class="image-gallery">
+                    <img src="images/3D4.png" alt="Mystery Falls Screenshot 1" class="gallery-image" onclick="openFullscreen(this)">
+                    <img src="images/3D.png" alt="Mystery Falls Screenshot 2" class="gallery-image" onclick="openFullscreen(this)">
+                    <img src="images/3D2.png" alt="Mystery Falls Screenshot 1" class="gallery-image" onclick="openFullscreen(this)">
+                </div>
+
+                <div class="image-gallery">
+                    <img src="images/3D5.png" alt="Mystery Falls Screenshot 3" class="gallery-image" onclick="openFullscreen(this)">
+                    <img src="images/3D3.png" alt="Mystery Falls Screenshot 1" class="gallery-image" onclick="openFullscreen(this)">
+                </div>
+                
+                <p>In this walk-through, I've transferred my models over to Unity, thus the textures and lighting had to be changed.</p>
+                <div class="video-container">
+                    
+                    <iframe 
+                        src="https://www.youtube.com/embed/GHcb8TSteIQ?si=gV3CqXmGdEDasvYi&amp;start=9" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                
+            </section>
+        </main>
+    </div>
+     <!-- Include the JavaScript file -->
+     <script src="script.js"></script>
+</body>
+</html>
