@@ -8,6 +8,8 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     height: 100vh;
+    overflow-x: hidden; /* Prevents side scrolling */
+
 }
 
 .container {
@@ -18,7 +20,7 @@ body {
 /* Sidebar Navigation */
 .sidebar {
     font-size: 20px;
-    width: 210px;
+    width: 215px;
     background-color: #e0dbc8;
     color: #cacaca;
     padding: 20px;
@@ -30,6 +32,12 @@ body {
 }
 
 .sidebar h2 {
+    color: #1b1b1b;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+.sidebar h5 {
     color: #1b1b1b;
     margin-left: 10px;
     margin-bottom: 0px;
@@ -59,6 +67,8 @@ body {
 .sidebar ul li a:hover {
     background-color: #cacaca;
 }
+
+
 
 /* Main Content */
 .content {
@@ -218,21 +228,29 @@ iframe {
 
 /* Video Container */
 .video-container {
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    position: relative;
     width: 100%;
-    background-color: #000;
-    padding: 10px;
-    text-align: center;
-    z-index: 1000;
+    max-width: 800px; /* Adjust as needed */
+    margin: 20px auto; /* Centers the video */
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
 }
 
 .video-container iframe {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 50%;
 }
+
+
+/* .video-container iframe {
+    /* position: relative;
+    
+    
+    border-radius: 8px; */
+} */
 
 /* Make all links green */
 a {
@@ -256,4 +274,15 @@ a:hover {
     color: green;
     background-color: #cacaca;
 }
+
+.sidebar ul h5 a {
+    color: black; /* Ensures the sidebar links are also green */
+}
+
+.sidebar ul h5 a:hover {
+    color: green;
+    background-color: #cacaca;
+}
+
+
 
