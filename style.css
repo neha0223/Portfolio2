@@ -174,7 +174,7 @@ body {
     display: flex;
     gap: 20px;
     margin-top: 20px;
-    justify-content: center;
+    justify-content: center; 
 }
 
 .gallery-image {
@@ -256,14 +256,6 @@ iframe {
     height: 50%;
 }
 
-
-/* .video-container iframe {
-    /* position: relative;
-    
-    
-    border-radius: 8px; */
-} */
-
 /* Make all links green */
 a {
     color: green; /* Change to any shade of green you like */
@@ -283,7 +275,7 @@ a:hover {
 }
 
 .sidebar ul li a:hover {
-    color: green;
+    color: #008000;
     background-color: #cacaca;
 }
 
@@ -308,4 +300,5 @@ a:hover {
 
 
 
+  
 

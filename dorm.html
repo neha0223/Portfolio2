@@ -1,121 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dorm simulator !</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dorm Simulator</title>
+  <link rel="stylesheet" href="dorm.css"/>
 </head>
 <body>
-    <div class="container">
-        <nav class="sidebar">
-            <h2><a href="index.html">neha s.</a></h2>
-            <ul>
-                <h5>games...</h5>
-                <li><a href="mystery.html">mystery falls: <br> game boy advance</a></li>
-                <li><a href="dorm.html">dorm simulator:<br> first-person adventure</a></li>
-                <li><a href="tripping.html">3d prototype:<br> nostalgia tripping</a></li>
-        
-                <h5><br></h5>
-                <h5>interaction design...</h5>
-                <li><a href="spotify.html">spotify wrapped: <br> an android app</a></li>
-                
-        
-                <h5><br></h5>
-                <h5>transmedia design...</h5>
-                <li><a href="VIP.html">VIP: <br>Electronic ARTrium</a></li>
-        
-                <h5><br></h5>
-                <h5>product design...</h5>
-                <li><a href="nostalgia.html">nostalgia: <br> a soda brand</a></li>
-                <li><a href="poster.html">poster remix</a></li>
-        
-                <h5><br></h5>
-                <h5>video production...</h5>
-                <li><a href="penelope.html">penelope road: <br> a documentary</a></li>
-                <li><a href="film.html">experimental films</a></li>
-            </ul>            
-        </nav>
-        <main class="content">
-            <section>
-                <!-- Title with Backup Link -->
-                <h1>dorm simulator 🛏️  <a href="https://neha23.itch.io/dorm-sim" target="_blank"> click to play</a></h1>
-                <p>Explore the Dorm Simulator game I created. This was fully coded in C# in Unity, using the integration of custom 3D Blender models. I also added a AI-run chat option with a NPC placeholder (shown as a capsule in the game) after you've explored the kitchen.</p>
+  <div class="container">
+    <nav class="sidebar">
+      <h2><a href="index.html">neha s.</a></h2>
+      <ul>
+        <h5>games...</h5>
+        <li><a href="mystery.html">mystery falls: <br> game boy advance</a></li>
+        <li><a href="dorm.html">dorm simulator:<br> first-person adventure</a></li>
+        <li><a href="tripping.html">3d prototype:<br> nostalgia tripping</a></li>
 
-                <!-- Embedded Game -->
+        <h5><br></h5>
+        <h5>interaction design...</h5>
+        <li><a href="spotify.html">spotify wrapped: <br> an android app</a></li>
+
+        <h5><br></h5>
+        <h5>transmedia design...</h5>
+        <li><a href="VIP.html">VIP: <br>Electronic ARTrium</a></li>
+
+        <h5><br></h5>
+        <h5>product design...</h5>
+        <li><a href="nostalgia.html">nostalgia: <br> a soda brand</a></li>
+        <li><a href="poster.html">poster remix</a></li>
+
+        <h5><br></h5>
+        <h5>video production...</h5>
+        <li><a href="penelope.html">penelope road: <br> a documentary</a></li>
+        <li><a href="film.html">experimental films</a></li>
+      </ul>
+    </nav>
+
+    <main class="content">
+        <section class="two-column-section">
+            <!-- LEFT COLUMN -->
+            <div class="column left-column">
+              <h1>dorm simulator 🛏️ first-person explorer<br> using Unity, C#, Blender, and OpenAI's Chatbot API</h1>
+              <p style="line-height: 1.8;">
+                Dorm Simulator is a fully interactive game I developed independently using Unity and C# scripting in Visual Studio. 
+                The game places players in a worn-out college apartment, allowing them to explore their surroundings in first person. 
+                As they progress, they'll encounter interactable objects to guide them through the setting. They'll even have to converse with a zombie NPC, convincing it to help them out. 
+                <br>
+                <br>
+                <b>Unity and C#</b>
+                <br>
+                In Unity, I created a C# script to control the interactivity and flow of a scene using a single controller. 
+                This script managed a sequence of dialogue-triggering objects, subsequent animations, and audio cues, in order to guide the player through the narrative. 
+                <br>For example, triggering an object's collider would would activate a dialogue box. 
+                Then, by pressing the interaction button, it will activate the animation controller, cuing an accompanying audio and unlocking the next interactive element. 
+                This approach allowed me to maintain clean, modular code while creating a more immersive, story-driven gameplay experience.
+              </p>
+              <div class="image-gallery">
+                <img src="gifs/Book.GIF" alt="Dorm 1" class="gallery-image">
+              </div>
+
+              
+
+              <div class="model-container">
+                <p>
+                    <b>Explore a few of my custom models I made below. <br>Once in fullscreen, use WASD to move around the environment.</b>
+                  </p>
+                <iframe class="model-iframe" src="coffeeTable.html"></iframe>
+                <iframe class="model-iframe" src="sodaCans.html"></iframe>
+                </div>
+
+              <p style="line-height: 1.8;">
+                <b>OpenAI's Chatbot API & NPC Dialogue</b>
+                <br>
+                I integrated OpenAI's API into my Unity project through the Package Manager to enable real-time AI-generated dialogue with a non-playable zombie character. 
+                After players explore the dorm environment, they can approach the NPC and start a natural language conversation directly in-game.
+                Using C#, I set up a system where the player's input is sent to OpenAI's language model, and the NPC responds dynamically, creating a more immersive experience. 
+                <br> The zombie uses the personality and instructions I've assigned it to deliver cryptic but helpful clues. 
+                Once it provides the key clue to progress, it's scripted to recognize the interaction is complete and walk away.
+                This seamless blend of narrative, interactivity, and AI-driven behavior adds depth and personality to the experience.
+              </p>
+
+              <div class="image-gallery">
+                <img src="gifs/NPC.GIF" alt="Dorm 1" class="gallery-image">
+              </div>
+                
+            
+                               
+            </div>
+    
+            <!-- RIGHT COLUMN -->
+            <div class="column right-column">
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+
                 <div class="iframe-container">
                     <iframe 
-                        frameborder="0" 
-                        src="https://itch.io/embed/3401353" 
-                        width="552" 
-                        height="167">
-                        <a href="https://neha23.itch.io/dorm-sim">Dorm Simulator (AI version) by neha23</a>
+                      src="https://itch.io/embed/3637117?border_width=2&amp;bg_color=1b1b1b&amp;fg_color=e0dbc8&amp;link_color=e0dbc8&amp;border_color=e0dbc8" 
+                      width="560" 
+                      height="175" 
+                      frameborder="0">
+                      <a href="https://neha23.itch.io/dorm-simulator-with-chatbot">
+                        Dorm Simulator (With Chatbot) by neha23
+                      </a>
                     </iframe>
-                </div>
-
-                <!-- <p>Tilemaps for levels 1 and 2:</p> -->
-    
-                <!-- Fullscreen Image Modal -->
-                <div class="fullscreen-overlay" id="fullscreenOverlay">
-                    <button class="close-btn" onclick="closeFullscreen()">×</button>
-                    <img id="fullscreenImg" src="">
-                </div>
-                <p>Sneak peek of the dormitory:</p>
-                
-                <!-- Images Section -->
-                <div class="image-gallery">
-                    
-                    <img src="images/dorm1.png" alt="Mystery Falls Screenshot 1" class="gallery-image" onclick="openFullscreen(this)">
-                    <img src="images/dorm2.png" alt="Mystery Falls Screenshot 2" class="gallery-image" onclick="openFullscreen(this)">
-                    <img src="images/dorm3.png" alt="Mystery Falls Screenshot 1" class="gallery-image" onclick="openFullscreen(this)">
-                </div>
-
-                <!-- <p>Sprite sheet and tiles:</p> -->
-
-                <div class="image-gallery">
-                    
-                    <img src="images/dorm4.png" alt="Mystery Falls Screenshot 2" class="gallery-image" onclick="openFullscreen(this)">
-                    <img src="images/dorm5.png" alt="Mystery Falls Screenshot 2" class="gallery-image" onclick="openFullscreen(this)">
-                </div>
-                <div>
-                    <p><br></p>
-                </div>
-
-                
-
-                <style>
-                    .model-container {
-                      display: flex;
-                      justify-content: space-around; /* Adjust spacing */
-                      align-items: center;
-                      gap: 20px; /* Space between iframes */
-                    }
-                  
-                    .model-iframe {
-                      flex: 1; /* Equal width distribution */
-                      max-width: 50%; /* Ensure they don’t exceed half the width */
-                      height: 800px;
-                    }
-                  </style>
-                  
-                  <div>
-                    <p>Explore the custom models I created. Use the WASD and your mouse to change perspective in the 3D space after entering fullscreen:</p>
-                    <div class="model-container">
-                      <iframe class="model-iframe" src="coffeeTable.html"></iframe>
-                      <iframe class="model-iframe" src="sodaCans.html"></iframe>
-                    </div>
-                    <div class="model-container">
-                        <iframe class="model-iframe" src="chair.html"></iframe>
-                        <iframe class="model-iframe" src="couch.html"></iframe>
-                      </div>
                   </div>
-                  
+    
+              <div class="image-gallery">
+                <img src="gifs/Kitchen.GIF" alt="Dorm 1" class="gallery-image">
+              </div>
 
-                
-            </section>
-        </main>
-    </div>
-    <!-- Include the JavaScript file -->
-    <script src="script.js"></script>
+              <p style="line-height: 1.8;">
+                <b>Blender & Mixamo</b>
+                <br>
+                I modeled, painted, rigged, and animated custom collectable objects entirely in Blender. 
+                I created idle and moving animations to enhance interactivity in the game, implementing individual animation controllers for each.
+                <br>For the zombie NPC, I started with a free 3D asset, which I cleaned up, adjusted proportions, and then rigged manually in Blender. 
+                I then imported it into Mixamo to apply realistic walking and idle animations. 
+                The rigged and animated zombie was brought into Unity, where I used C# scripting to trigger its behavior and movement based on the player's conversation with the NPC.
+              </p>
+
+              
+              <div class="model-container">
+                <p>
+                    <br>
+                    <br>
+                  </p>
+                <iframe class="model-iframe" src="chair.html"></iframe>
+                <iframe class="model-iframe" src="couch.html"></iframe>
+                </div>
+
+              <div class="image-gallery">
+                <div class="tall-pair">
+                  <img src="images/zombie_blender1.png" alt="Vertical Image 1">
+                  <img src="images/zombie_blender2.png" alt="Vertical Image 2">
+                </div>
+              </div>
+
+              <p style="line-height: 1.8;">
+                <b>Future Work</b>
+                <br>
+                Now that player mechanics and interactivity have been implemented, I want to focus on the use of agentic AI to build a more realstic non-playable character. 
+                Additionally, I'm currently implementing Unity's AI Naviagtion package to allow the NPC to navigate wherever it wants without bumping into objects in the scene.
+                <br> I think adding more sound design would also benefit the player experience, as the audio cues are pretty limited as of now. 
+                <br> 
+                <br> 
+                <b>Thank you for reading about my game! Check it out on Itch with the link above :)</b>
+              </p>
+              
+            </div>
+          </section>
+      </main>
+  </div>
+
+  <!-- Fullscreen Image Modal -->
+  <div class="fullscreen-overlay" id="fullscreenOverlay">
+    <button class="close-btn" onclick="closeFullscreen()">×</button>
+    <img id="fullscreenImg" src="" alt="Fullscreen Preview"/>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
+

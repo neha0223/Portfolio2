@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>spotify wrapped !</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="spotify.css">
 </head>
 <body>
     <div class="container">
@@ -37,49 +37,47 @@
             </ul>            
         </nav>
         <main class="content">
-            <section>
-                <!-- Title with Backup Link -->
-                <h1>spotify wrapped mobile app 🎧</h1>
-                <p>Learn more about our Spotify Wrapped Android app. You can open it the prototype by testing below or <a href="https://www.figma.com/proto/4P90SHrorZdkzol5onHfyE/spotify-sdk?node-id=2-8&t=1O6IAGfZziz7xUFH-1" target="_blank">click here</a> to open it directly in figma.</p>
-
-                <p>Sketches and Prototypes:</p>
-
-                <!-- Fullscreen Image Modal -->
-                <div class="fullscreen-overlay" id="fullscreenOverlay">
-                    <button class="close-btn" onclick="closeFullscreen()">×</button>
-                    <img id="fullscreenImg" src="">
-                </div>
-                
-                <!-- Images Section -->
-                <div class="image-gallery">
-                    <img src="images/spotify1.png" alt="Mystery Falls Screenshot 1" class="gallery-image" onclick="openFullscreen(this)">
-                    <img src="images/spotify2.png" alt="Mystery Falls Screenshot 2" class="gallery-image" onclick="openFullscreen(this)">
-                </div>
-
-                <p>Explore the Figma prototype of my Spotify Wrapped project below by... 
-                    </br> ~ swiping to left to move forward 
-                    </br> ~ tapping on the left side of the screen to move backward
-                </p>
-        
-                    <!-- Embedded Figma Prototype -->
-                    <div class="iframe-container">
-                        <iframe 
-                            style="border: 1px solid rgba(0, 0, 0, 0.1);" 
-                            height="800" 
-                            src="https://embed.figma.com/proto/4P90SHrorZdkzol5onHfyE/spotify-sdk?node-id=2-8&embed-host=share" 
-                            allowfullscreen>
-                        </iframe>
+            <section class="two-column-section">
+                <!-- LEFT COLUMN -->
+                <div class="column left-column">
+                  <h1>spotify wrapped mobile app 🎧 <br>using Android Studio (Java), Figma, Spotify's API, and Firebase</h1>
+                  <p style="line-height: 1.8;">
+                    <b>Role: Technical Lead, UI/UX Designer</b> 
+                    <br>
+                    <br>
+                    In a six student team, I was part of creating a personalized Spotify Wrapped experience by integrating the Spotify Web API into a custom Android app. 
+                    This app pulls live data from a user's Spotify account, including top artists, songs, and genres, generating a visually engaging, real-time "Spotify Wrapped" summary for any time of the year, not just December.
+                    <br> I sketched, prototyped, and implemented the user interface to reflect the musical, dynamic aesthetic of Spotify. 
+                    My role also focused on account creation and user profile storage, so that users can securely connect their real Spotify accounts with our app's login system.
+                    This project gave me advanced knowledge in API integration, wireframing, user authentication, and mobile development in Android Studio.
+                  </p>
+                    <!-- Fullscreen Image Modal -->
+                    <div class="fullscreen-overlay" id="fullscreenOverlay">
+                        <button class="close-btn" onclick="closeFullscreen()">×</button>
+                        <img id="fullscreenImg" src="">
                     </div>
 
-                <p>For this project, I was part of a team of 6 students, where I designed a user-friendly interface for a Spotify Wrapped-style application using Java and Kotlin in Android Studio.
+                    <div class="image-gallery">
+                        <img src="images/spotify2.png" alt="Mystery Falls Screenshot 2" class="gallery-image" onclick="openFullscreen(this)">
+                        <img src="images/In_App.png" alt="Mystery Falls Screenshot 1" class="gallery-image" onclick="openFullscreen(this)">
+                    </div>
+    
+                  <p style="line-height: 1.8;">
+                    <b>Firebase & Account Authentication</b>
                     <br>
-                    <br> ~ Led development of personalized music listening summaries by integrating <a href="https://developer.spotify.com/documentation/web-api" target="_blank">Spotify's API</a> in Java, aligning with stakeholder expectations
-                    <br> ~ Implemented user authentication and account storage using Firebase, allowing for secure and personalized user experience
-                    <br> ~ Collaborated extensively through GitHub, facilitating team version control and reviews to maintain high coding standards
-                </p>
-                    
-                <div class="video-container">
-                    
+                    To create a personalized and replyable app for each person, we integrated Firebase into our code to manage user accounts and store data across sessions. 
+                    Firebase offered us a real-time backend without needing to write our own server code. 
+                    <br> 
+                    We used Firebase Authentication to create and manage user accounts. 
+                    Each user can sign up and log in using an username and password, and subsequently connect their real-life Spotify account along with it.
+                    They can also change their username/password within the app, which will update for the next time they try to login to their account. 
+                    <br>
+                    <br>
+                    <br>
+                    <b>Watch the full walkthrough below and check out the <a href="https://www.figma.com/proto/4P90SHrorZdkzol5onHfyE/spotify-sdk?content-scaling=fixed&kind=proto&node-id=1-5&scaling=scale-down" target="_blank">Figma prototype</a> as well!</b>
+                 </p>
+
+                 <div class="video-container">
                     <iframe 
                         src="https://www.youtube.com/embed/aunbR7jvoCI?si=uK8vOp_qYiXd_Emt" 
                         title="YouTube video player" 
@@ -89,9 +87,60 @@
                         allowfullscreen>
                     </iframe>
                 </div>
-            </section>
-            
-        </main>
+                </div>
+        
+                <!-- RIGHT COLUMN -->
+                <div class="column right-column">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>    
+                    <div class="image-gallery">
+                        <img src="images/spotify1.png" alt="Mystery Falls Screenshot 1" class="gallery-image" onclick="openFullscreen(this)">
+                    </div>
+    
+                  <p style="line-height: 1.8;">
+                    <b>Sketches & Figma Prototyping</b>
+                    <br>
+                    I designed an interactive mobile app prototype in Figma that allows users to swipe through different screens, mimicking a native app experience. 
+                    Using Figma's interactive components and smart animate transitions, I created a fluid, gesture-based navigation system, just like a real mobile app.
+                    Each screen is linked using frame connections and drag triggers, which enable users to swipe left or right to move through the app. 
+                    <br> To your left, you'll see the final version of the wireframed UI I made in Figma followed by the final outcome I implemented into Android Studio. 
+                    I created XML files for each activity and fragments to create a reusable layout similar to the Figma prototype.
+                  </p>
+
+                  <p style="line-height: 1.8;">
+                    <b>Android Studio & Java</b>
+                    <br>
+                    I created XML files for the activity files and fragments to create a reusable layout similar to the Figma prototype. 
+                    Due to my extensive knowledge in Java, I used this as my main programming language to help write logic for buttons, data handling, and navigation. 
+                    My main focus on the backend was to first parse the JSON objects received from Spotify's API and reflect that through the user interface. 
+                    Here, I was able to aesthetically display the statistic of the user's listening history.
+                  </p>
+
+    
+                  <div class="image-gallery">
+                    <div class="tall-pair">
+                      <img src="gifs/app_intro.gif" alt="Vertical Image 1">
+                      <img src="images/app_home.png" alt="Vertical Image 2">
+                    </div>
+                  </div>
+    
+                  <div class="iframe-container">
+                    <iframe 
+                        style="border: 1px solid rgba(0, 0, 0, 0.1);" 
+                        height="800" 
+                        src="https://embed.figma.com/proto/4P90SHrorZdkzol5onHfyE/spotify-sdk?node-id=2-8&embed-host=share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                  
+                </div>
+              </section>
+          </main>
+        
         
     </div>
     <!-- Include the JavaScript file -->

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>the electronic ARTrium !</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="VIP.css">
 </head>
 <body>
     <div class="container">
@@ -37,56 +37,113 @@
             </ul>            
         </nav>
         <main class="content">
-            <section id="home">
-                <h1>georgia tech's vertically integrated project: <br> the electronic ARTrium 🕹️ <a href="https://electronicartrium.ece.gatech.edu/bee-my-guide/" target="_blank"> click to explore webpage</a> </h1>
-                <div class="about-container">
-                    <div class="info">
-                        <h3>about the project</h3>
-                        <p class="caption">Sponsored by BMW</p>
-
-                        <p>The Electronic ARTrium is a multimedia video game exhibit that detects a players' entire body to play and win the game. It combines life-sized digital imagery, animatronics, and sounds to create a transmedia experience.</p>
-                        <p>Check out the instagram page below for more information.</p>
-                        <div class="instagram-embed">
-                            <blockquote class="instagram-media"
-                                data-instgrm-permalink="https://www.instagram.com/electronicartrium/?utm_source=ig_embed&amp;utm_campaign=loading" 
-                                data-instgrm-version="14"
-                                style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); 
-                                margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); 
-                                width:calc(100% - 2px);">
-                            </blockquote>
-                        </div>
-
-                        <p>My role consisted of sketching and modeling intricate structures for 3D environmental assets in Blender, and deploying those models into video game
-                            scenes using the Unity game engine for an interactive life-sized video game exhibit. I also facilitated lip sync animation sequences for mechatronics, digitally producing expected mouth movement using characters’
-                            auditory narrations within Unity's animator controller through C# interpolation scripts and <a href="https://github.com/DanielSWolf/rhubarb-lip-sync" target="_blank"> Rhubarb's</a> lip sync software.</p>
-                        
-                        <p> I also assisted in system integration for interactive video game exhibit using Unity Multithreading Server through C#
-                            scripting in order to create a multimedia experience combining sound, mechatronics, and video. I continued the 3D Modeling of animatronic characters in Blender, creating digital renditions of expected robotic movements through
-                            rigging and animation of 3D models to be imported into Unity.</p>
-                        <p>
-                            A smaller group, which I took part in, presented project outcomes to BMW representatives, receiving positive feedback and suggestions for future enhancements.
-                        </p>
-                    </div>
+            <section class="two-column-section">
+                <!-- LEFT COLUMN -->
+                <div class="column left-column">
+                    <h1><a href="https://electronicartrium.ece.gatech.edu/bee-my-guide/" target="_blank"> GATECH's Electronic ARTrium 🕹️ </a><br> using Unity, Blender, Multithreading, and Arduino</h1>
                     
-                    <div class="photo">
-                        <img src="images/Sandy.GIF" alt="Sandy video">
-                        <p class="caption">Video from final exhibit "Sandy the Snake" speaking during Level 4 of "Bee My Guide"</p>
-                    </div>
-                    <div class="photo">
-                        <img src="images/Sandy_Blender 2.GIF" alt="Sandy blender video again">
-                        <p><br></p>
-                        <img src="images/Sandy_inside.gif" alt="Sandy mechanics">
-                        <p class="caption">Screen recording of Sandy's 3D virtual environment and mechanically faithful model I created, rigged, and animated in Blender</p>
-                        <img src="images/Sandy2.jpg" alt="Sandy2">
-                        <p class="caption">A "mechanical forest" can be seen in the screens above. My 2D sketches of the 3D rendition are included below. </p>
-                        <img src="images/forest.png" alt="mechanical forest">
-                        <p><br></p>
-                        <img src="images/Robot Tree.gif" alt="robot tree">
+                    <p style="line-height: 1.8;">
+                        <b>Role: Research Assistant, Visual Art Design Team Lead</b> 
+                        <br>
+                        <br>
+                        The Electronic ARTrium is a multimedia video game exhibit that detects a players' entire body to play and win the game. 
+                        It combines life-sized digital imagery, animatronics, and sound design to create a transmedia experience.<br>
+                        <br>
+                        <b>Unity Game Engine & Rhubarb </b>
+                        <br>
+                        I worked extensively in Unity using C# to integrate multiple systems-including video, sound, and mechatronics into a cohesive multimedia experience. 
+                        My role began as implenting lip synchronization of our 3D characters, creating seamless animation clips in a efficient way. 
+                        Using <a href="https://github.com/crdrury/Unity-Rhubarb-Lip-Syncer?tab=readme-ov-file" target="_blank"> Rhubarb</a>, an Audio2Face-like command-line tool, I helped created custom interpolated animation clips that match prerecorded dialogue, bringing our virtual characters to life. 
+                        Also utilizing this tool, we were able to create a sequence of blend shapes to send to our mechatronic animals through an Arduino-readable format, now bringing our physical characters to life as well.                   
+                        <br>
+                        <br>
+                        <b>Python & Multithreading Server </b>
+                        <br>
+                        To control the animatronic characters in real time, we used a Python multithreaded server to communicate motor angle data to an Arduino that drives the physical movements. 
+                        The server acted as a central hub, receiving animation timing data from Unity and translating it into motor-specific instructions that the Arduino can interpret.
+                        The use of multithreading in Python is essential here as it allows the server to simultaneously manage multiple clients or data streams without blocking. 
+                        <br>By mapping mouth shapes (visemes) to motor angle presets, we achieved real-time lip syncing. 
+                        The server continuously streams these angle values to the Arduino, which then moves the servo motors embedded in the animatronic's mouth or limbs accordingly.
+                  </p>
+                  <div class="image-gallery">
+                    <img src="images/Sandy_inside.gif" alt="snake mechanics" class="gallery-image">
+                  </div>
 
+                  <p>
+                    <b></b>
+                  </p>
+
+                  <div class="image-gallery">
+                    <div class="tall-pair">
+                      <img src="images/Sandy.GIF" alt="Vertical Image 1">
+                      <img src="images/Sandy2.jpg" alt="Vertical Image 1">
                     </div>
+                  </div>
+    
+                  
+    
+                  
+                    
+                
+                                   
                 </div>
-            </section>
-        </main>
+        
+                <!-- RIGHT COLUMN -->
+                <div class="column right-column">
+    
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+    
+    
+                    <p><b>Check out the instagram page below!</b></p>
+                    <div class="instagram-embed">
+                        <blockquote class="instagram-media"
+                            data-instgrm-permalink="https://www.instagram.com/electronicartrium/?utm_source=ig_embed&amp;utm_campaign=loading" 
+                            data-instgrm-version="14"
+                            style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); 
+                            margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); 
+                            width:calc(100% - 2px);">
+                        </blockquote>
+                    </div>
+        
+                  <div class="image-gallery">
+                    <img src="images/Sandy_Blender 2.GIF" alt="Dorm 1" class="gallery-image">
+                  </div>
+    
+                  <p style="line-height: 1.8;">
+                    <b>Blender</b>
+                    <br>
+                    Using the CAD model of our snake robot, I was able to create a digital twin of our mechatronic set up to simulate our desired movements in Blender.
+                    I used the motors from inner mechanics to create an armature and added necessary contraints to provide realism. 
+                    <br>I created animations accompanying each piece of recorded dialogue to match the robot's body movements to their audio. 
+                    Exporting these into Unity, we were able to create multilple TXT files contained motor angles readable for the physical snake's motors.
+                    <br>Additionally, I sculpted a snake head in Blender to be 3D printed, providing our robotic snake a skeleton to accompany its mechanics.
+                  </p>
+    
+    
+                  <div class="image-gallery">
+                    <div class="tall-pair">
+                      <img src="images/3d model.jpg" alt="Vertical Image 1">
+                      <img src="images/mechanics.jpg" alt="Vertical Image 1">
+                    </div>
+                  </div>
+    
+                  <p style="line-height: 1.8;">
+                    <b>Final Show</b>
+                    <br>
+                    Thanks to our sponsorship, I was able to present our project midway through to BMW representatives along with a few other selected students, receiving positive feedback and suggestions for future enhancements.
+                    We were able to speak with those in the VR/AR department and discuss how virtual environments in Unity used in the real-world.
+                    
+                  </p>
+                  
+                </div>
+              </section>
+          </main>
+        
     </div>
 
     <!-- Instagram Embed Script -->
