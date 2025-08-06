@@ -302,3 +302,41 @@ a:hover {
 
   
 
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10000;
+    border-radius: 4px;
+}
+
+.nav-btn:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.nav-btn.left {
+    left: 30px;
+}
+
+.nav-btn.right {
+    right: 30px;
+}
+
+/* Thumbnails on the page */
+.gallery-image {
+    width: 600px; /* smaller than before */
+    height: auto;
+}
+
+/* Fullscreen modal image */
+.fullscreen-overlay img {
+    max-width: 80vw; /* was 95vw */
+    max-height: 80vh; /* was 95vh */
+}
