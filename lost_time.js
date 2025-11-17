@@ -143,3 +143,15 @@ overlay.addEventListener('touchend', () => {
 window.openFullscreen = openFullscreen;
 window.closeFullscreen = closeFullscreen;
 window.changeImage = changeImage;
+
+document.addEventListener('DOMContentLoaded', () => {
+    const sidebarContainer = document.getElementById('sidebar-container');
+    if (sidebarContainer) {
+        fetch('sidebar.html')
+            .then(res => res.text())
+            .then(html => {
+                sidebarContainer.innerHTML = html;
+            });
+    }
+});
+
