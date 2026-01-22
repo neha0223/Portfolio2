@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lost time !</title>
+    <link rel="stylesheet" href="/css/lost.css">
+</head>
+<body>
+    <div class="container">
+        <div id="sidebar-container"></div>
+        <main class="content">
+            <section>
+                <!-- Title with Backup Link -->
+                <h1>
+                    
+                        lost time: environment design 🌲
+                    
+                </h1>
+                <p>Inspired by Final Fantasy IX, I created a series of rural town background renders using Blender 3D. I integrated many different models, textures, and particle systems.</p>
+
+                <!-- Fullscreen Image Modal -->
+                <div class="fullscreen-overlay" id="fullscreenOverlay">
+                    <button class="close-btn" onclick="closeFullscreen()">×</button>
+                    <button class="nav-btn left" onclick="changeImage(-1)">&#10094;</button>
+                    <img id="fullscreenImg" src="">
+                    <button class="nav-btn right" onclick="changeImage(1)">&#10095;</button>
+                </div>
+                
+                
+                <!-- Images Section -->
+
+                <div class="image-gallery">
+                    
+                </div>
+
+                <div class="image-gallery">
+                    <img src="/assets/images/town.png" alt="Mystery Falls Screenshot 1" class="gallery-image" onclick="openFullscreen(this)">
+                    <img src="/assets/images/birdseye.png" alt="Mystery Falls Screenshot 1" class="gallery-image" onclick="openFullscreen(this)">
+                </div>
+
+                <div class="image-gallery">
+                    <img src="/assets/images/bakery.jpg" alt="Mystery Falls Screenshot 1" class="gallery-image" onclick="openFullscreen(this)">
+                    <img src="/assets/images/tavern.png" alt="Mystery Falls Screenshot 2" class="gallery-image" onclick="openFullscreen(this)">
+                </div>
+                <div class="image-gallery">
+                    <img src="/assets/images/closed_gate.jpg" alt="Mystery Falls Screenshot 1" class="gallery-image" onclick="openFullscreen(this)">
+                    <img src="/assets/images/open_gate.jpg" alt="Mystery Falls Screenshot 2" class="gallery-image" onclick="openFullscreen(this)">
+                </div>
+            </section>
+        </main>
+    </div>
+    <script type="module">
+        import { initPortfolioJS } from "/js/script.js"
+        initPortfolioJS({ sidebarUrl: "/sidebar.html" })
+      </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mystery falls !</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="sidebar-container"></div>
+        <main class="content">
+            <section>
+                <h1>mystery falls 🎮 <a href="https://neha0223.github.io/gba_mystery_falls/" target="_blank"> click to play</a></h1>
+                <p>Mystery Falls is a 2D platformer video game created using machine-level programming in C, utilizing a Gameboy Advance emulator. 
+                    The game is an independent project integrating graphics, sound, and user interaction. 
+                    It takes inspiration from the animated Disney show, Gravity Falls, recreating memorable characters in GBA-form.</p>
+
+                <p>I designed the characters and created animated sprites, sprite sheets, tilemaps, and backgrounds using the pixel art software, Usenti.
+                    The title screen includes the implementation of parallax movement using GBA registers, while the game displays in-game modification of tilemaps and sprite palettes.</p>
+
+                <p>Tilemaps for levels 1 and 2:</p>
+    
+                <!-- Fullscreen Image Modal -->
+                <div class="fullscreen-overlay" id="fullscreenOverlay">
+                    <button class="close-btn" onclick="closeFullscreen()">×</button>
+                    <img id="fullscreenImg" src="">
+                </div>
+                
+                <!-- Images Section -->
+                <div class="image-gallery">
+                    <img src="/assets/images/MF_Level1.png" alt="Mystery Falls Screenshot 1" class="gallery-image" onclick="openFullscreen(this)">
+                    <img src="/assets/images/MF_Level2.png" alt="Mystery Falls Screenshot 2" class="gallery-image" onclick="openFullscreen(this)">
+                    <!-- <img src="images/MF_MAP3.png" alt="Mystery Falls Screenshot 3" class="gallery-image" onclick="openFullscreen(this)"> -->
+                </div>
+
+                <p>Sprite sheet and tiles:</p>
+
+                <div class="image-gallery">
+                    <img src="/assets/images/MF_Tiles.png" alt="Mystery Falls Screenshot 1" class="gallery-image" onclick="openFullscreen(this)">
+                    <img src="/assets/images/MF_Sheet2.png" alt="Mystery Falls Screenshot 2" class="gallery-image" onclick="openFullscreen(this)">
+                    <!-- <img src="images/MF_MAP3.png" alt="Mystery Falls Screenshot 3" class="gallery-image" onclick="openFullscreen(this)"> -->
+                </div>
+                  
+                
+            </section>
+        </main>
+    </div>
+    <script type="module">
+        import { initPortfolioJS } from "/js/script.js"
+        initPortfolioJS({ sidebarUrl: "/sidebar.html" })
+      </script>
+</body>
+</html>
