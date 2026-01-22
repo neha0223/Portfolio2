@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR digicam !</title>
+    <link rel="stylesheet" href="/css/spotify.css">
+</head>
+<body>
+    <div class="container">
+      <div id="sidebar-container"></div>
+        <main class="content">
+            
+            <section class="two-column-section">
+                <!-- LEFT COLUMN -->
+                <div class="column left-column">
+                    <h1>Digital Camera 📸 in Augmented Reality <br> using Unity, Vuforia Engine, Blender, <br> Adobe Creative Suite, & 3D Printing</h1>
+                    
+                    <p style="line-height: 1.8;">
+                        <b>Role: 3D Interaction Designer</b> 
+                        <br><br>
+                        <b>Summary </b>
+                        <br>
+                        • Developed an interactive Tangible Augmented Reality (TAR) experience in Unity using the Vuforia Engine, aligning a “Digicam” model with a 3D-printed prototype via image tracking <br>
+                        • Designed UI elements and iconography in Adobe Illustrator and Photoshop to simulate camera interface controls <br>
+                        • Focused on usability and storytelling, bridging product visualization and interaction design through AR-based prototyping <br>
+                 
+                      
+                        </p>
+
+                        <img src="/assets/images/digi_front.jpg" alt="3d model image" class="gallery-image">
+                        <p> <i> fastened screen to physical 3D model for image tracking and camera detection</i></p>
+                    
+
+                  
+
+
+             
+                </div>
+        
+                <!-- RIGHT COLUMN -->
+                <div class="column right-column">
+    
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+
+                    <div class="image-gallery">
+                        <img src="/assets/images/expanding.gif" alt="3d model exploded view" class="gallery-image">
+                        <div class="image-gallery digi-carousel">
+                          <button class="gallery-arrow left" onclick="changeDigiImage(-1)">&#10094;</button>
+                          
+                          <img 
+                              id="digiGalleryImage"
+                              src="/assets/images/UI_setup.jpg"
+                              alt="blender camera"
+                              class="gallery-image"
+                              onclick="openFullscreen(this)"
+                          >
+                          
+                          <button class="gallery-arrow right" onclick="changeDigiImage(1)">&#10095;</button>
+                          </div>
+                            
+                      </div>
+        
+                  
+                  
+    
+                  
+                  
+                </div>
+              </section>
+              
+          </main>
+        
+    </div>
+
+
+    <script type="module">
+        import { initPortfolioJS } from "/js/script.js"
+        initPortfolioJS({ sidebarUrl: "/sidebar.html" })
+      </script>
+</body>
+</html>

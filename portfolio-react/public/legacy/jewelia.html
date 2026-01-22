@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jewelia !</title>
+    <link rel="stylesheet" href="/css/jewelia.css">
+</head>
+<body>
+    <div class="container">
+      <div id="sidebar-container"></div>
+        <main class="content">
+            <section class="two-column-section">
+                <!-- LEFT COLUMN -->
+                <div class="column left-column">
+                  <h1>jewelia 💍 <br>using Figma, GenAI, and Blender</h1>
+
+                  <div class="image-gallery">
+                    <div class="tall-pair">
+                      <img src="/assets/images/jewelia/Home.png" alt="Vertical Image 1">
+                      <img src="/assets/images/jewelia/Scan Screen.png" alt="Vertical Image 2">
+                    </div>
+                  </div>
+                  <div class="image-gallery">
+                    <div class="tall-pair">
+                      <img src="/assets/images/jewelia/My Collection.png" alt="Vertical Image 1">
+                      <img src="/assets/gifs/mockup2.gif" alt="Vertical Image 2">
+                    </div>
+                  </div>
+
+                  <div class="image-gallery">
+                    <div class="tall-pair">
+                      <img src="/assets/images/jewelia/Compare.png" alt="Vertical Image 2">
+                      <img src="/assets/images/jewelia/Analyze.png" alt="Vertical Image 1">
+                      
+                    </div>
+                  </div>
+                    <!-- Fullscreen Image Modal -->
+                    <div class="fullscreen-overlay" id="fullscreenOverlay">
+                        <button class="close-btn" onclick="closeFullscreen()">×</button>
+                        <img id="fullscreenImg" src="">
+                    </div>
+
+    
+                </div>
+        
+                <!-- RIGHT COLUMN -->
+                <div class="column right-column">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>    
+                    <div class="image-gallery">
+                      <div class="tall-pair">
+                        <img src="/assets/images/jewelia/Image Screen.png" alt="Vertical Image 1">
+                        <img src="/assets/images/jewelia/Scan Jewlery.png" alt="Vertical Image 2">
+                      </div>
+                    </div>
+
+                    <div class="image-gallery1">
+                      <img src="/assets/gifs/jewelia2.gif" alt="Mystery Falls Screenshot 2" class="gallery-image" onclick="openFullscreen(this)">
+                    </div>
+    
+                  <div class="iframe-container">
+                    <iframe 
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/pAe7cMNQg9XclLICkIpzNN/Jewelia-App-Prototype?node-id=15-20&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&embed-host=share" allowfullscreen></iframe>
+                    </iframe>
+                </div>
+                  
+                </div>
+              </section>
+          </main>
+        
+        
+    </div>
+    <script type="module">
+      import { initPortfolioJS } from "/js/script.js"
+      initPortfolioJS({ sidebarUrl: "/sidebar.html" })
+    </script>
+</body>
+</html>
